@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="3dp"
+    app:cardBackgroundColor="#fff"
+    app:contentPadding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="Tên: "
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:text="Tên ở đây"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Tuổi: "
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txtAge"
+                        android:text="Tuổi ở đây"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Số ĐT: "
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txtPhone"
+                        android:text="SDT"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Facebook: "
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txtSocial"
+                        android:text="Facebook"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Mail: "
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txtMail"
+                        android:text="Email"
+                        android:textSize="20sp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

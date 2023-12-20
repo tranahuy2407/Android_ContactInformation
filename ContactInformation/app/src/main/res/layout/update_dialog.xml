@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/imgViewRecord"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#0000FF"
+        android:src="@drawable/ic_add_photo"/>
+    <EditText
+        android:id="@+id/edtName"
+        android:hint="Tên"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+    <EditText
+        android:id="@+id/edtAge"
+        android:hint="Tuổi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+    <EditText
+        android:id="@+id/edtPhone"
+        android:hint="Số điện thoại"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+    <EditText
+        android:id="@+id/edtSocial"
+        android:hint="Facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+    <EditText
+        android:id="@+id/edtMail"
+        android:hint="Mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF6347"
+        android:text="Lưu thay đổi"/>
+
+</LinearLayout>

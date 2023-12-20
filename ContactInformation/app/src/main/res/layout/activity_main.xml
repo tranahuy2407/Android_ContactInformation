@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="10dp">
+
+       <TextView
+           android:id="@+id/title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentStart="true"
+           android:layout_alignParentEnd="true"
+           android:layout_gravity="center"
+           android:layout_marginStart="104dp"
+           android:layout_marginEnd="107dp"
+           android:gravity="center"
+           android:text="Thêm bạn mới"
+           android:textColor="	#FF4500"
+           android:textSize="30dp"
+           android:textStyle="bold"></TextView>
+
+       <ImageView
+           android:id="@+id/imageView"
+           android:layout_width="160dp"
+           android:layout_height="160dp"
+           android:layout_below="@+id/title"
+           android:layout_centerHorizontal="true"
+           android:background="	#0000FF"
+           android:src="@drawable/ic_add_photo" />
+       <EditText
+           android:id="@+id/edtName"
+           android:layout_below="@+id/imageView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="Tên"
+           android:layout_centerHorizontal="true"
+           android:ems="15"/>
+       <EditText
+           android:id="@+id/edtAge"
+           android:layout_below="@+id/edtName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="Tuổi"
+           android:layout_centerHorizontal="true"
+           android:ems="15"/>
+       <EditText
+           android:id="@+id/edtPhone"
+           android:layout_below="@+id/edtAge"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="Số điện thoại"
+           android:layout_centerHorizontal="true"
+           android:ems="15"/>
+       <EditText
+           android:id="@+id/edtSocial"
+           android:layout_below="@+id/edtPhone"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:hint="Mạng xã hội"
+           android:layout_centerHorizontal="true"
+           android:ems="15"/>
+       <EditText
+           android:id="@+id/edtMail"
+           android:layout_below="@+id/edtSocial"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:inputType="textEmailAddress|textNoSuggestions"
+           android:hint="Mail"
+           android:layout_centerHorizontal="true"
+           android:ems="15"/>
+
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/btnCapture"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/imageView"
+           android:layout_alignStart="@+id/imageView"
+           android:layout_marginStart="164dp"
+           android:layout_marginTop="-57dp"
+           android:layout_marginEnd="-215dp"
+           android:layout_toStartOf="@+id/imageView"
+           android:src="@drawable/ic_add_photo" />
+
+       <Button
+           android:id="@+id/btnAdd"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/edtMail"
+           android:layout_centerHorizontal="true"
+           android:minWidth="160dp"
+           android:backgroundTint="#FF6347"
+           android:text="Thêm"/>
+       <Button
+           android:id="@+id/btnList"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/btnAdd"
+           android:layout_centerHorizontal="true"
+           android:minWidth="160dp"
+           android:backgroundTint="#FF6347"
+           android:text="Danh sách bạn bè"/>
+   </RelativeLayout>
+</ScrollView>
